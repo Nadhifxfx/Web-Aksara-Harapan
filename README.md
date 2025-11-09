@@ -1,4 +1,4 @@
-**🧩 Game Petualangan 2D: Aksara Harapan**
+## **🧩 Game Petualangan 2D: Aksara Harapan**
 Sebuah game sekaligus website edukasi yang dirancang untuk membantu pemain belajar Bahasa Isyarat Indonesia (BISINDO) melalui pengalaman petualangan interaktif dan visual.
 
 🚀 Fitur Utama
