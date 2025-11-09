@@ -63,9 +63,8 @@ export default function Contact() {
             <div className="bg-white rounded-2xl p-6 mb-8 shadow-lg">
               <h4 className="font-bold text-lg mb-4 text-center">Tentang Developer</h4>
               <p className="text-gray-600 leading-relaxed text-center">
-                Passionate game developer dengan fokus pada educational games dan teknologi AI.
-                Tertarik menciptakan pengalaman belajar yang inovatif melalui gameplay interaktif.
-                Spesialisasi dalam pengembangan game 2D dan implementasi RAD methodology.
+              Halo! Nama saya Nadhif Fathur Rahman. Saya antusias mencoba hal-hal baru dan berupaya belajar serta meningkatkan keterampilan saya setiap hari. Saya percaya bahwa rasa ingin tahu, ketekunan, dan kemampuan beradaptasi adalah faktor kunci dalam pertumbuhan pribadi dan profesional.   
+              Saat ini, saya fokus pada pengembangan keterampilan pemrograman saya dan terbuka untuk peluang baru di mana saya dapat berkembang, berkontribusi, dan terhubung dengan orang-orang yang memiliki minat serupa.
               </p>
             </div>
 
