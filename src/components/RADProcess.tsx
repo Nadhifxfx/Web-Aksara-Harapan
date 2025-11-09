@@ -41,7 +41,7 @@ export default function RADProcess() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-            Proses Pengembangan RAD
+            Proses Pengembangan 
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Metodologi Rapid Application Development untuk pengembangan cepat dan iteratif

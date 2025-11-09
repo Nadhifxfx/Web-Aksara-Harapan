@@ -102,10 +102,10 @@ export default function Contact() {
         <footer className="mt-16 pt-8 border-t-2 border-gray-200">
           <div className="text-center text-gray-600">
             <p className="mb-2">
-              &copy; 2025 SignAdventure - Game Edukasi Bahasa Isyarat
+              &copy; 2025 Aksara Harapan - Game Edukasi Bahasa Isyarat
             </p>
             <p className="text-sm">
-              Dikembangkan dengan <span className="text-red-500">❤️</span> menggunakan React, TypeScript, Tailwind CSS & Gemini AI
+              Dikembangkan oleh Nadhif <span className="text-red-500">❤️</span> menggunakan React, TypeScript, Tailwind CSS & Gemini AI
             </p>
           </div>
         </footer>

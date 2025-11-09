@@ -15,7 +15,7 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 bg-clip-text text-transparent">
-            SignAdventure
+            Aksara Harapan
           </h1>
 
           <p className="text-2xl md:text-3xl text-gray-700 mb-4 font-semibold">
