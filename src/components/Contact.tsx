@@ -1,4 +1,4 @@
-import { Github, Mail, Linkedin, Twitter, MessageSquare } from 'lucide-react';
+import { Github, Mail, Linkedin, Instagram, MessageSquare } from 'lucide-react';
 
 export default function Contact() {
   const socialLinks = [
@@ -12,7 +12,7 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      href: 'mailto:nadhifxfx@example.com',
+      href: 'mailto:nadhiffathur@gmail.com',
       color: 'hover:text-red-500',
       bg: 'bg-red-100',
     },
@@ -24,9 +24,9 @@ export default function Contact() {
       bg: 'bg-blue-100',
     },
     {
-      icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com/nadhifxfx',
+      icon: Instagram,
+      label: 'Instagram',
+      href: 'https://instagram.com/nd10.mp4',
       color: 'hover:text-sky-500',
       bg: 'bg-sky-100',
     },

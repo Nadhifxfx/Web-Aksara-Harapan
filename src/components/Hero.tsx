@@ -24,7 +24,7 @@ export default function Hero() {
 
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
             Game petualangan 2D edukatif untuk mempelajari Bahasa Isyarat Indonesia (BISINDO)
-            dengan teknologi AI dan metode Rapid Application Development
+            dengan teknologi AI
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
