@@ -26,7 +26,7 @@ export default function Navbar({ scrolled }: NavbarProps) {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent hover:opacity-80 transition-opacity">
-              SignAdventure
+              Aksara Harapan
             </Link>
           </div>
 

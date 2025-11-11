@@ -21,7 +21,7 @@ export default function AILearning() {
 
     try {
       const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${GEMINI_API_KEY}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`,
         {
           method: 'POST',
           headers: {
@@ -77,7 +77,7 @@ export default function AILearning() {
       const base64Image = imagePreview.split(',')[1];
 
       const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`,
         {
           method: 'POST',
           headers: {
@@ -265,9 +265,7 @@ export default function AILearning() {
 
         <div className="mt-8 bg-yellow-50 border-2 border-yellow-200 rounded-2xl p-6">
           <p className="text-sm text-gray-700 text-center">
-            <span className="font-semibold">💡 Catatan:</span> Untuk menggunakan fitur AI, pastikan Anda sudah mengkonfigurasi
-            <code className="bg-yellow-100 px-2 py-1 rounded mx-1">VITE_GEMINI_API_KEY</code>
-            di file <code className="bg-yellow-100 px-2 py-1 rounded">.env</code>
+            <span className="font-semibold">💡 Catatan:</span> Fitur AI ini masih dalam uji coba
           </p>
         </div>
       </div>
