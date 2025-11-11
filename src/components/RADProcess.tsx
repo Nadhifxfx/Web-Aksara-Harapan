@@ -41,7 +41,7 @@ export default function RADProcess() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-            Proses Pengembangan 
+            Proses Pengembangan RAD
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Metodologi Rapid Application Development untuk pengembangan cepat dan iteratif
@@ -83,7 +83,7 @@ export default function RADProcess() {
         </div>
 
         <div className="mt-16 bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-8 border-2 border-blue-200">
-          <h3 className="text-2xl font-bold mb-4 text-center">Keunggulan Game ini</h3>
+          <h3 className="text-2xl font-bold mb-4 text-center">Keunggulan Metode RAD</h3>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="text-4xl mb-2">⚡</div>

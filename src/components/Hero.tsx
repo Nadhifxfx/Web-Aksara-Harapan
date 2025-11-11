@@ -15,7 +15,7 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 bg-clip-text text-transparent">
-            Aksara Harapan
+            SignAdventure
           </h1>
 
           <p className="text-2xl md:text-3xl text-gray-700 mb-4 font-semibold">
@@ -24,7 +24,7 @@ export default function Hero() {
 
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
             Game petualangan 2D edukatif untuk mempelajari Bahasa Isyarat Indonesia (BISINDO)
-            dengan teknologi AI
+            dengan teknologi AI dan metode Rapid Application Development
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

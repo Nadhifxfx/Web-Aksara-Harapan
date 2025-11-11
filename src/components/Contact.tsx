@@ -1,4 +1,4 @@
-import { Github, Mail, Linkedin, Instagram, MessageSquare } from 'lucide-react';
+import { Github, Mail, Linkedin, Twitter, MessageSquare } from 'lucide-react';
 
 export default function Contact() {
   const socialLinks = [
@@ -12,7 +12,7 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      href: 'mailto:nadhiffathur@gmail.com',
+      href: 'mailto:nadhifxfx@example.com',
       color: 'hover:text-red-500',
       bg: 'bg-red-100',
     },
@@ -24,9 +24,9 @@ export default function Contact() {
       bg: 'bg-blue-100',
     },
     {
-      icon: Instagram,
-      label: 'Instagram',
-      href: 'https://instagram.com/nd10.mp4',
+      icon: Twitter,
+      label: 'Twitter',
+      href: 'https://twitter.com/nadhifxfx',
       color: 'hover:text-sky-500',
       bg: 'bg-sky-100',
     },
@@ -63,8 +63,9 @@ export default function Contact() {
             <div className="bg-white rounded-2xl p-6 mb-8 shadow-lg">
               <h4 className="font-bold text-lg mb-4 text-center">Tentang Developer</h4>
               <p className="text-gray-600 leading-relaxed text-center">
-              Halo! Nama saya Nadhif Fathur Rahman. Saya antusias mencoba hal-hal baru dan berupaya belajar serta meningkatkan keterampilan saya setiap hari. Saya percaya bahwa rasa ingin tahu, ketekunan, dan kemampuan beradaptasi adalah faktor kunci dalam pertumbuhan pribadi dan profesional.   
-              Saat ini, saya fokus pada pengembangan keterampilan pemrograman saya dan terbuka untuk peluang baru di mana saya dapat berkembang, berkontribusi, dan terhubung dengan orang-orang yang memiliki minat serupa.
+                Passionate game developer dengan fokus pada educational games dan teknologi AI.
+                Tertarik menciptakan pengalaman belajar yang inovatif melalui gameplay interaktif.
+                Spesialisasi dalam pengembangan game 2D dan implementasi RAD methodology.
               </p>
             </div>
 
@@ -101,10 +102,10 @@ export default function Contact() {
         <footer className="mt-16 pt-8 border-t-2 border-gray-200">
           <div className="text-center text-gray-600">
             <p className="mb-2">
-              &copy; 2025 Aksara Harapan - Game Edukasi Bahasa Isyarat
+              &copy; 2025 SignAdventure - Game Edukasi Bahasa Isyarat
             </p>
             <p className="text-sm">
-              Dikembangkan oleh Nadhif <span className="text-red-500">❤️</span> menggunakan React, TypeScript, Tailwind CSS & Gemini AI
+              Dikembangkan dengan <span className="text-red-500">❤️</span> menggunakan React, TypeScript, Tailwind CSS & Gemini AI
             </p>
           </div>
         </footer>

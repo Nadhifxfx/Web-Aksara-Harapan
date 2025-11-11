@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { MessageCircle, Image as ImageIcon, Send, Loader2, Sparkles } from 'lucide-react';
+import { MessageCircle, Image as ImageIcon, Send, Loader2, Sparkles, Home } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-export default function AILearning() {
+export default function AILearningPage() {
   const [chatQuestion, setChatQuestion] = useState('');
   const [chatResponse, setChatResponse] = useState('');
   const [chatLoading, setChatLoading] = useState(false);
@@ -118,41 +119,51 @@ export default function AILearning() {
   };
 
   return (
-    <section id="ai-learning" className="py-20 px-4 bg-gradient-to-br from-blue-50 to-purple-50">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <div className="flex justify-center mb-4">
-            <div className="bg-gradient-to-r from-purple-400 to-pink-400 p-4 rounded-2xl">
-              <Sparkles className="text-white" size={32} />
-            </div>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+    <div className="pt-20">
+      <div className="bg-gradient-to-r from-purple-100 to-pink-100 py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <Link to="/" className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 mb-4">
+            <Home size={20} />
+            Kembali ke Beranda
+          </Link>
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             Belajar dengan AI
-          </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Manfaatkan kekuatan Gemini AI untuk pembelajaran bahasa isyarat yang lebih interaktif
+          </h1>
+          <p className="text-xl text-gray-700 max-w-3xl">
+            Manfaatkan teknologi Gemini AI untuk pembelajaran bahasa isyarat yang interaktif dan personal
           </p>
         </div>
+      </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+      <div className="max-w-7xl mx-auto px-4 py-20">
+        <div className="grid lg:grid-cols-2 gap-12 mb-20">
           <div className="bg-white rounded-3xl shadow-2xl p-8">
             <div className="flex items-center gap-3 mb-6">
               <div className="bg-blue-100 p-3 rounded-xl">
                 <MessageCircle className="text-blue-500" size={24} />
               </div>
-              <h3 className="text-2xl font-bold">Chat Edukasi Bahasa Isyarat</h3>
+              <h2 className="text-3xl font-bold">Chat Edukasi</h2>
             </div>
 
             <p className="text-gray-600 mb-6">
-              Tanya AI tentang bahasa isyarat, kosakata BISINDO, atau tips belajar komunikasi tuli
+              Tanya AI apapun tentang bahasa isyarat, kosakata BISINDO, atau tips belajar komunikasi dengan komunitas tuli.
             </p>
 
             <div className="space-y-4">
+              <div className="bg-blue-50 rounded-xl p-4 mb-4">
+                <h4 className="font-bold text-blue-900 mb-2">Contoh Pertanyaan:</h4>
+                <ul className="text-sm text-blue-800 space-y-1">
+                  <li>• Bagaimana cara mengucapkan "Selamat Pagi" dalam BISINDO?</li>
+                  <li>• Apa perbedaan BISINDO dengan bahasa isyarat lainnya?</li>
+                  <li>• Berikan tips belajar bahasa isyarat yang efektif</li>
+                </ul>
+              </div>
+
               <textarea
                 value={chatQuestion}
                 onChange={(e) => setChatQuestion(e.target.value)}
-                placeholder="Contoh: Bagaimana cara mengucapkan 'terima kasih' dalam bahasa isyarat?"
-                className="w-full p-4 border-2 border-gray-200 rounded-2xl focus:border-blue-400 focus:outline-none resize-none h-32 transition-colors"
+                placeholder="Tanya tentang bahasa isyarat..."
+                className="w-full p-4 border-2 border-gray-200 rounded-2xl focus:border-blue-400 focus:outline-none resize-none h-40 transition-colors"
                 onKeyDown={(e) => {
                   if (e.key === 'Enter' && !e.shiftKey) {
                     e.preventDefault();
@@ -196,11 +207,11 @@ export default function AILearning() {
               <div className="bg-green-100 p-3 rounded-xl">
                 <ImageIcon className="text-green-500" size={24} />
               </div>
-              <h3 className="text-2xl font-bold">Pengenalan Gestur AI</h3>
+              <h2 className="text-3xl font-bold">Analisis Gestur</h2>
             </div>
 
             <p className="text-gray-600 mb-6">
-              Upload gambar gestur tangan dan biarkan AI mengidentifikasi bahasa isyarat
+              Upload foto gestur tangan dan biarkan AI mengidentifikasi bahasa isyarat dengan akurat.
             </p>
 
             <div className="space-y-4">
@@ -263,14 +274,29 @@ export default function AILearning() {
           </div>
         </div>
 
-        <div className="mt-8 bg-yellow-50 border-2 border-yellow-200 rounded-2xl p-6">
-          <p className="text-sm text-gray-700 text-center">
-            <span className="font-semibold">💡 Catatan:</span> Untuk menggunakan fitur AI, pastikan Anda sudah mengkonfigurasi
-            <code className="bg-yellow-100 px-2 py-1 rounded mx-1">VITE_GEMINI_API_KEY</code>
-            di file <code className="bg-yellow-100 px-2 py-1 rounded">.env</code>
-          </p>
+        <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-3xl p-12 border-2 border-purple-200">
+          <h3 className="text-3xl font-bold mb-6 text-center">Fitur-Fitur AI</h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="text-5xl mb-4">💬</div>
+              <h4 className="font-bold text-lg mb-2">Chat Real-time</h4>
+              <p className="text-gray-700">Dapatkan jawaban instant untuk setiap pertanyaan tentang bahasa isyarat</p>
+            </div>
+
+            <div className="text-center">
+              <div className="text-5xl mb-4">👁️</div>
+              <h4 className="font-bold text-lg mb-2">Vision Recognition</h4>
+              <p className="text-gray-700">AI dapat menganalisis dan mengidentifikasi gestur dari foto</p>
+            </div>
+
+            <div className="text-center">
+              <div className="text-5xl mb-4">🎓</div>
+              <h4 className="font-bold text-lg mb-2">Pembelajaran Personal</h4>
+              <p className="text-gray-700">Materi disesuaikan dengan gaya belajar dan kecepatan Anda</p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
