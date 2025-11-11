@@ -12,8 +12,6 @@ export default function Navbar({ scrolled }: NavbarProps) {
   const navItems = [
     { label: 'Beranda', href: '/' },
     { label: 'Tentang Game', href: '/tentang-game' },
-    { label: 'Belajar dengan AI', href: '/ai-learning' },
-    { label: 'Proses RAD', href: '/rad-process' },
     { label: 'Galeri', href: '/gallery' },
     { label: 'Kontak', href: '/contact' },
   ];
