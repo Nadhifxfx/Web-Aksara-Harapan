@@ -45,7 +45,7 @@ export default function AILearning() {
       if (data.candidates && data.candidates[0]?.content?.parts[0]?.text) {
         setChatResponse(data.candidates[0].content.parts[0].text);
       } else {
-        setChatResponse('Maaf, tidak dapat memproses pertanyaan Anda. Pastikan API key sudah dikonfigurasi.');
+        setChatResponse('Maaf, tidak dapat memproses pertanyaan Anda. Pastikan Pertanyaan anda sesuai dengan topik.');
       }
     } catch (error) {
       setChatResponse('Terjadi kesalahan saat menghubungi AI. Silakan coba lagi.');
@@ -107,7 +107,7 @@ export default function AILearning() {
       if (data.candidates && data.candidates[0]?.content?.parts[0]?.text) {
         setVisionResponse(data.candidates[0].content.parts[0].text);
       } else {
-        setVisionResponse('Maaf, tidak dapat menganalisis gambar. Pastikan API key sudah dikonfigurasi.');
+        setVisionResponse('Maaf, tidak dapat menganalisis gambar.');
       }
     } catch (error) {
       setVisionResponse('Terjadi kesalahan saat menganalisis gambar. Silakan coba lagi.');
